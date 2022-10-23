@@ -1,0 +1,14 @@
+{
+  "name": "fakejsonserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://mymac: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@github.com/karlstein/fakejsonserver.git",
+  "author": "MacBook Pro",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "scripts": {
+    "json-serve": "json-server --watch db.json"
+  }
+}

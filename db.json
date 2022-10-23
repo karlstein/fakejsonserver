@@ -1,0 +1,675 @@
+{
+    "mydb": {
+        "data": {
+            "status": 200,
+            "payload": {
+                "updatedDatePrintedMedia": "2022-10-17T00:00:00.000+00:00",
+                "updatedDateSocialMedia": "2022-10-20T00:00:00.000+00:00",
+                "socialMedia": [
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-10-20 16:39:41",
+                        "promotionStartDatetime": "2022-10-20",
+                        "totalSent": 550,
+                        "isNew": true,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 550,
+                        "updatedDateTime": "2022-10-20 16:39:41",
+                        "contentPromotionId": "362a02ea-46e0-4c56-bb31-eedfa5a48138",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/84c38235-0d0f-4110-8f8d-2baf945c84d3.jpeg",
+                                "contentPromotionId": "362a02ea-46e0-4c56-bb31-eedfa5a48138",
+                                "docId": "3f7d2aca-bfa2-4dfb-ab25-a48bd402bab4",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 52991
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Kpm",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-10-17 14:06:11",
+                        "promotionStartDatetime": "2022-10-17",
+                        "totalSent": 549,
+                        "isNew": true,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 549,
+                        "updatedDateTime": "2022-10-20 10:00:22",
+                        "contentPromotionId": "d157f20c-a90b-40bc-986c-ff315be1bb47",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/93e0366a-11da-49df-a890-75004515e415.jpeg",
+                                "contentPromotionId": "d157f20c-a90b-40bc-986c-ff315be1bb47",
+                                "docId": "7dc9ff55-ed7a-40cc-94c1-8db8476f7289",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 45010
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Tes Media Sosial",
+                        "totalShare": 22,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-10-10 09:41:34",
+                        "promotionStartDatetime": "2022-10-10",
+                        "totalSent": 548,
+                        "isNew": true,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 548,
+                        "updatedDateTime": "2022-10-18 16:45:23",
+                        "contentPromotionId": "095e0ee1-b727-414e-81c5-1f423ce51b98",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/e47bdf7b-6248-4af8-a59c-08358f8602e7.jpeg",
+                                "contentPromotionId": "095e0ee1-b727-414e-81c5-1f423ce51b98",
+                                "docId": "6629cb0a-f905-4300-b07a-7d4a3081a9c8",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 52991
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Promosi KPM",
+                        "totalShare": 14,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-09-29 09:51:06",
+                        "promotionStartDatetime": "2022-09-29",
+                        "totalSent": 548,
+                        "isNew": true,
+                        "promotionFinishDatetime": "2022-10-27",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 548,
+                        "updatedDateTime": "2022-10-18 14:51:06",
+                        "contentPromotionId": "a62743f5-190f-4488-82c7-b9988c54e74a",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/59e9c9b9-c36b-4a01-a6cd-9b1b666eae00.jpeg",
+                                "contentPromotionId": "a62743f5-190f-4488-82c7-b9988c54e74a",
+                                "docId": "b9f243af-e189-4a5c-a22b-0b730530213e",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 14962
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "media sosial 42",
+                        "totalShare": 26,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-09-18 22:00:12",
+                        "promotionStartDatetime": "2022-09-18",
+                        "totalSent": 567,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('SUMATERA','JAWA 1','JAWA 2','KALIMANTAN','INDOTIM') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 567,
+                        "updatedDateTime": "2022-10-18 17:11:01",
+                        "contentPromotionId": "75a2dfac-e55f-4117-83ed-c4a5b5fb0bd1",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/acbcf79c-aa2c-46c4-8587-cfb94440740f.jpeg",
+                                "contentPromotionId": "75a2dfac-e55f-4117-83ed-c4a5b5fb0bd1",
+                                "docId": "439573b5-d3b2-459b-8ab3-264dcaa6636c",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 5345
+                            }
+                        ],
+                        "scopedArea": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "contentPromotionName": "tester",
+                        "totalShare": 64,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-09-06 13:36:32",
+                        "promotionStartDatetime": "2022-09-06",
+                        "totalSent": 546,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 546,
+                        "updatedDateTime": "2022-10-18 16:52:00",
+                        "contentPromotionId": "2abcf031-1832-4386-a225-baa1f7f2c5f5",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/c256df29-687f-401d-b888-5fd21e13d8e5.png",
+                                "contentPromotionId": "2abcf031-1832-4386-a225-baa1f7f2c5f5",
+                                "docId": "d0940546-5d17-4c03-b396-b6901420410c",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 121322
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "media sosial 38",
+                        "totalShare": 24,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-09-02 08:02:14",
+                        "promotionStartDatetime": "2022-09-02",
+                        "totalSent": 546,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 546,
+                        "updatedDateTime": "2022-10-18 14:25:49",
+                        "contentPromotionId": "494dab3c-6c6e-4b86-915a-e3342c4a4126",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/3e3579f2-36be-4031-b3a3-e5b9b5dd0145.jpeg",
+                                "contentPromotionId": "494dab3c-6c6e-4b86-915a-e3342c4a4126",
+                                "docId": "e36698a2-b7b5-44e6-a724-174c5c6f27b9",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 130504
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "media sosial 34",
+                        "totalShare": 23,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-09-01 14:34:59",
+                        "promotionStartDatetime": "2022-09-01",
+                        "totalSent": 546,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 546,
+                        "updatedDateTime": "2022-09-01 16:30:48",
+                        "contentPromotionId": "cf509adc-1c89-49e0-bfac-374314c32295",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/3706190e-2af2-4cf0-868d-31418fd0047f.jpeg",
+                                "contentPromotionId": "cf509adc-1c89-49e0-bfac-374314c32295",
+                                "docId": "f136fe92-7225-4202-adbe-b7e05efddfe2",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 38313
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "media sosial 33",
+                        "totalShare": 9,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "SOCIAL_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-08-30 15:13:39",
+                        "promotionStartDatetime": "2022-08-30",
+                        "totalSent": 566,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('SUMATERA','JAWA 1','JAWA 2','KALIMANTAN','INDOTIM') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 566,
+                        "updatedDateTime": "2022-10-11 18:14:55",
+                        "contentPromotionId": "b801526c-d895-4ea9-8a2d-6e3665d7217f",
+                        "contentPromotionType": "",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/c76ad2a4-299c-4dde-bef6-9ced481eab9d.png",
+                                "contentPromotionId": "b801526c-d895-4ea9-8a2d-6e3665d7217f",
+                                "docId": "fcb304c4-e987-429f-9c13-d924e120230a",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 121322
+                            }
+                        ],
+                        "scopedArea": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "contentPromotionName": "Media sosial Semua Wilayah",
+                        "totalShare": 29,
+                        "status": "ACTIVE"
+                    }
+                ],
+                "printedMedia": [
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-10-17 14:34:05",
+                        "promotionStartDatetime": "2022-10-17",
+                        "totalSent": 549,
+                        "isNew": true,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 549,
+                        "updatedDateTime": "2022-10-17 14:35:53",
+                        "contentPromotionId": "9dd71d60-81c4-4f2f-abb0-c7c986a5f6ac",
+                        "contentPromotionType": "POSTER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/868f6481-17fe-4d14-b8b3-08ff39b66333.png",
+                                "contentPromotionId": "9dd71d60-81c4-4f2f-abb0-c7c986a5f6ac",
+                                "docId": "7e7f1e95-0049-46e9-a0d8-2519d6cf786a",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 517059
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/ba6a8355-793e-4210-bc84-3bedb39b6c26.pdf",
+                                "contentPromotionId": "9dd71d60-81c4-4f2f-abb0-c7c986a5f6ac",
+                                "docId": "b4f6a072-2cab-46d1-82c1-4e9daa1b5d84",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 1361271
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Poster satu",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 0,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-10-10 09:45:19",
+                        "promotionStartDatetime": "2022-10-10",
+                        "totalSent": 548,
+                        "isNew": true,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 548,
+                        "updatedDateTime": "2022-10-10 09:45:19",
+                        "contentPromotionId": "7ec1e4e2-f2cf-4132-ad40-9c49f650f282",
+                        "contentPromotionType": "FLYER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/cfb6080a-7368-454a-a556-a35d7d4856ec.jpeg",
+                                "contentPromotionId": "7ec1e4e2-f2cf-4132-ad40-9c49f650f282",
+                                "docId": "10a35327-45e5-4f74-aaa3-e93179e2940c",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 52991
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/207795db-172b-44c5-86d1-1561043c0214.pdf",
+                                "contentPromotionId": "7ec1e4e2-f2cf-4132-ad40-9c49f650f282",
+                                "docId": "52c289b5-d97e-40db-b0c9-4623cff932b5",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 2647947
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "flyer KPM",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 4,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-09-29 14:43:12",
+                        "promotionStartDatetime": "2022-09-29",
+                        "totalSent": 548,
+                        "isNew": true,
+                        "promotionFinishDatetime": "2022-10-26",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 548,
+                        "updatedDateTime": "2022-10-04 15:10:50",
+                        "contentPromotionId": "d13f53ed-1399-45bc-9967-aa78408a3a99",
+                        "contentPromotionType": "BANNER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/453645bd-18d6-4990-b71b-25b07e7d1756.jpeg",
+                                "contentPromotionId": "d13f53ed-1399-45bc-9967-aa78408a3a99",
+                                "docId": "19bd657d-6161-4cf5-9fcb-ea049b307457",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 37252
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/8ee65a92-0c5d-413d-a69a-44334961b39e.pdf",
+                                "contentPromotionId": "d13f53ed-1399-45bc-9967-aa78408a3a99",
+                                "docId": "63df05e6-c432-43f2-b6e1-b5c5fccdbb09",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 1361271
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Spanduk baru",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 8,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-09-29 09:52:51",
+                        "promotionStartDatetime": "2022-09-29",
+                        "totalSent": 548,
+                        "isNew": true,
+                        "promotionFinishDatetime": "2022-11-15",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 548,
+                        "updatedDateTime": "2022-10-03 03:46:48",
+                        "contentPromotionId": "47311203-3c83-4cd4-ad19-19ff1e73c1bc",
+                        "contentPromotionType": "FLYER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/b80f2b53-e49c-42cc-b5d6-84dc3ca0d766.pdf",
+                                "contentPromotionId": "47311203-3c83-4cd4-ad19-19ff1e73c1bc",
+                                "docId": "29093fdf-492f-4b99-a005-8b4d85214b85",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 1361271
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/1192f2c2-8f2e-42da-8d73-2560e35debfd.jpeg",
+                                "contentPromotionId": "47311203-3c83-4cd4-ad19-19ff1e73c1bc",
+                                "docId": "1e53372f-0102-42ec-a77c-a8ac7d582102",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 14962
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Flyer 10",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 134,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-09-18 22:20:46",
+                        "promotionStartDatetime": "2022-09-18",
+                        "totalSent": 567,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('SUMATERA','JAWA 1','JAWA 2','KALIMANTAN','INDOTIM') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 567,
+                        "updatedDateTime": "2022-10-03 14:41:42",
+                        "contentPromotionId": "1fde888e-0e48-4333-b11f-76cc9e82c53d",
+                        "contentPromotionType": "FLYER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/1c80a4e8-da6d-4c4f-b193-98e2a9a0a10a.pdf",
+                                "contentPromotionId": "1fde888e-0e48-4333-b11f-76cc9e82c53d",
+                                "docId": "a2e3a17a-fd0b-4fdb-b9f6-24038166edb7",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 31900
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/5b2ab884-30d5-473c-947d-d655a764921f.png",
+                                "contentPromotionId": "1fde888e-0e48-4333-b11f-76cc9e82c53d",
+                                "docId": "cc15e11c-061e-4857-b17f-318c10afaf90",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 2299665
+                            }
+                        ],
+                        "scopedArea": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "contentPromotionName": "flyer test",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 97,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-08-30 08:46:14",
+                        "promotionStartDatetime": "2022-08-30",
+                        "totalSent": 546,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 546,
+                        "updatedDateTime": "2022-09-29 18:18:41",
+                        "contentPromotionId": "8827e571-ce68-40b1-94d2-2e397a60ddeb",
+                        "contentPromotionType": "FLYER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/ff97868b-4a89-42f4-9222-f1d1e6930a6f.pdf",
+                                "contentPromotionId": "8827e571-ce68-40b1-94d2-2e397a60ddeb",
+                                "docId": "941b68a8-f7f5-490d-9a8d-fc210c48e259",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 1254215
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/4525c5dc-4a1a-4369-8319-c8fa0001414d.jpeg",
+                                "contentPromotionId": "8827e571-ce68-40b1-94d2-2e397a60ddeb",
+                                "docId": "2bbaad15-15c2-4f67-8f7a-03647b6085b2",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 66815
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Flyer 2",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 170,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-08-26 14:16:45",
+                        "promotionStartDatetime": "2022-08-27",
+                        "totalSent": 546,
+                        "isNew": false,
+                        "promotionFinishDatetime": "2025-02-28",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 546,
+                        "updatedDateTime": "2022-10-03 13:15:47",
+                        "contentPromotionId": "85c90916-4fe4-43b8-9de9-17196bec48fc",
+                        "contentPromotionType": "FLYER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/e4feac5f-dfa2-4c72-8412-32efb3060bf6.pdf",
+                                "contentPromotionId": "85c90916-4fe4-43b8-9de9-17196bec48fc",
+                                "docId": "957a861f-c291-4c56-b97a-bc93fd66ae2b",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 57152
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/b1efd92b-f9e6-4f14-920c-72299e3b8608.jpeg",
+                                "contentPromotionId": "85c90916-4fe4-43b8-9de9-17196bec48fc",
+                                "docId": "b5e9f3f6-2f37-40b7-b395-e2df53863492",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 68324
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Flayer",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 163,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-08-25 14:08:20",
+                        "promotionStartDatetime": "2022-08-25",
+                        "totalSent": 546,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 546,
+                        "updatedDateTime": "2022-10-03 12:04:04",
+                        "contentPromotionId": "c3430ce0-0f8b-407c-b3b1-b1b7ac1f443c",
+                        "contentPromotionType": "FLYER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/e58c6010-6893-41f3-9baf-a3940ca5620c.pdf",
+                                "contentPromotionId": "c3430ce0-0f8b-407c-b3b1-b1b7ac1f443c",
+                                "docId": "6ae1c56e-73d3-41ab-a1d3-e76a5c725e5e",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 57152
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/c554eadc-a198-4c37-abe2-55ec0a084439.png",
+                                "contentPromotionId": "c3430ce0-0f8b-407c-b3b1-b1b7ac1f443c",
+                                "docId": "ff92932a-35f6-4843-bb0d-80e0b92c90e7",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 121322
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "Flayer Selamanya",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    },
+                    {
+                        "contentPromotionMedia": "PRINTED_MEDIA",
+                        "totalDownload": 43,
+                        "persona": "MAGNET",
+                        "createdDateTime": "2022-08-25 14:07:18",
+                        "promotionStartDatetime": "2022-08-25",
+                        "totalSent": 546,
+                        "isNew": false,
+                        "promotionFinishDatetime": "9999-12-31",
+                        "platform": "MANTIS",
+                        "sql": "select u.user_id, u.user_full_name, u.user_mobile_phone_number, bw.branch_wilayah_name \nfrom user_schema.user u \n         inner join user_schema.agent a \n                    on u.user_id = a.user_id \n         inner join user_schema.universe_agent ua \n                    on a.agent_id = ua.agent_id \n                        and ua.agent_type = 'EXTERNAL' \n                        and ua.isactive = true \n         join user_schema.branch b on ua.branch_id = b.branch_id \n         join user_schema.branches_region br on br.branch_id = b.branch_id \n         join user_schema.branch_region brr on brr.branch_region_id = br.branch_region_id \n    and brr.isreferred_by_mantis \n         join user_schema.branch_region_wilayah brw on brw.branch_region_id = brr.branch_region_id \n         join user_schema.branch_wilayah bw on bw.branch_wilayah_id = brw.branch_wilayah_id \n    and bw.branch_wilayah_name in ('JAWA 1') \nwhere true group by u.user_id, u.user_full_name, bw.branch_wilayah_name \norder by u.user_full_name",
+                        "totalDistribution": 546,
+                        "updatedDateTime": "2022-10-04 15:10:01",
+                        "contentPromotionId": "f288cfbc-d110-42cb-8509-b582fed45af6",
+                        "contentPromotionType": "BANNER",
+                        "docs": [
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/e4871e0a-c1a1-456e-ab1b-404df04b7375.pdf",
+                                "contentPromotionId": "f288cfbc-d110-42cb-8509-b582fed45af6",
+                                "docId": "38a47784-c3ac-424c-b026-afebeceea912",
+                                "docType": "DOCUMENT",
+                                "docSeq": 2,
+                                "docSize": 57152
+                            },
+                            {
+                                "docImage": "https://mantis-cdn.oss-ap-southeast-5.aliyuncs.com/files_dev/1e4e452e-4206-4e63-ad6e-6450e14de9d0.png",
+                                "contentPromotionId": "f288cfbc-d110-42cb-8509-b582fed45af6",
+                                "docId": "f04e5c97-0805-488f-b474-bc03bfc841b6",
+                                "docType": "IMAGE",
+                                "docSeq": 1,
+                                "docSize": 121322
+                            }
+                        ],
+                        "scopedArea": [
+                            2
+                        ],
+                        "contentPromotionName": "spanduk 1",
+                        "totalShare": 0,
+                        "status": "ACTIVE"
+                    }
+                ]
+            }
+        }
+    }
+}
